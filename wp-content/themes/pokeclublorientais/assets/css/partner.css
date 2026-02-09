@@ -1,0 +1,57 @@
+/* partner details' page */
+#partner {
+    .flex {
+        flex-direction: row-reverse;
+    }
+    & > * {
+        width: 50%;
+    }
+    img {
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+/* partners section with cards */
+#partners {
+    .flex {
+        flex-wrap: wrap;
+
+        .article-card.partner {
+            border: none;
+            box-shadow: none;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            min-width: 200px;
+            height: 100%;
+            min-height: 200px;
+            max-height: 300px;
+            aspect-ratio: 1;
+
+            .article-card-title {
+                background: none;
+                color: var(--DARK);
+                font-size: 1.2em;
+                font-weight: bold;
+                text-align: center;
+                position: relative;
+            }
+
+            img {
+                position: relative;
+                object-fit: cover;
+                height: 80%;
+                width: 80%;
+                transform: scale(0.9);
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
