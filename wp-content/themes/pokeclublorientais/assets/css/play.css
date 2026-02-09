@@ -1,0 +1,14 @@
+:is(#rules, #play) .flex {
+    img {
+        max-width: 40%;
+        object-fit: cover;
+    }
+
+    li::marker {
+        font-weight: bold;
+    }
+
+    .link::before {
+        display: none;
+    }
+}
