@@ -1,0 +1,23 @@
+form {
+    width: 50%;
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        > * {
+            max-width: 300px;
+            width: 100%;
+        }
+        > label {
+            margin-top: 1em;
+        }
+        > :not(label) {
+            padding: 1em;
+            border: none;
+            box-shadow: 0 0 4px 0 var(--DARK);
+            border-radius: 4px;
+            margin-top: .4em;
+            margin-bottom: .8em;
+            font-style: italic;
+        }
+    }
+}
