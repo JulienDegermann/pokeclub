@@ -40,12 +40,13 @@ $other_partners = get_other_partners();
       </div>
     </div>
   </section>
-  <section>
+  <section class="more-datas">
     <div class="container">
-      <div class="flex">
+      <h3 class="article-title">Nos autres partenaires</h3>
+      <div class="cards-wrapper">
         <?php
         while ($other_partners->have_posts()): $other_partners->the_post();
-          include __DIR__ . '/_partials/_patner_card.php';
+          include __DIR__ . '/_partials/_partner_card.php';
         endwhile;
         wp_reset_postdata();
         ?>

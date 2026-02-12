@@ -29,7 +29,7 @@ if ($last_events->have_posts()) { ?>
     <section class="dark" id="events">
         <div class="container">
             <h3 class="section-title">Les prochains évènements</h3>
-            <div id="articles-wrapper">
+            <div class="cards-wrapper">
                 <?php
                 while ($last_events->have_posts()) : $last_events->the_post();
                     include('_partials/_event_card.php');
@@ -48,12 +48,10 @@ if ($last_events->have_posts()) { ?>
 <section id="partners">
     <div class="container">
         <h3 class="section-title">Nos partnenaires</h3>
-        <div class="flex">
-
+        <div class="cards-wrapper">
             <?php
             while ($partners->have_posts()) : $partners->the_post();
-
-                include('_partials/_patner_card.php');
+                include('_partials/_partner_card.php');
             endwhile;
             wp_reset_postdata();
 

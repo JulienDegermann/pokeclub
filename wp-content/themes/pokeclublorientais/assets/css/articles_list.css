@@ -4,7 +4,7 @@ section.dark {
     }
 }
 
-#articles-wrapper {
+.cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -51,5 +51,16 @@ section.dark {
         margin: 0;
         width: 100%;
         backdrop-filter: blur(15px);
+    }
+}
+
+.more-datas {
+    .cards-wrapper {
+        justify-content: space-around;
+        justify-items: left;
+    }
+    .cards-wrapper .article-card {
+        max-width: 240px;
+        max-height: 250px;
     }
 }

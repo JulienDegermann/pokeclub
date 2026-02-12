@@ -7,5 +7,4 @@
   <h3 class="article-card-title">
     <?= esc_html(get_field('name')); ?> <br>
   </h3>
-
 </a>
