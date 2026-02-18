@@ -2,7 +2,7 @@ services:
     wordpress:
         image: wordpress:latest
         ports:
-            - "80:80"
+            - 80
         labels:
             - traefik.enable=true
             - traefik.http.routers.webpconverter.rule=Host(`pokeclub.ju2breizh.fr`)
