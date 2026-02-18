@@ -5,7 +5,7 @@ services:
             - 80
         labels:
             - traefik.enable=true
-            - traefik.http.routers.webpconverter.rule=Host(`pokeclub.ju2breizh.fr`)
+            - traefik.http.routers.pokeclub.rule=Host(`pokeclub.ju2breizh.fr`)
         build:
             context: .
         networks:
