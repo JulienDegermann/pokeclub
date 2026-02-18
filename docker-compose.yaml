@@ -1,8 +1,8 @@
 services:
     wordpress:
-        image: wordpress:latest
+        image: wp_pokemon
         ports:
-            - 80
+            - "80"
         labels:
             - traefik.enable=true
             - traefik.http.routers.pokeclub.rule=Host(`pokeclub.ju2breizh.fr`)

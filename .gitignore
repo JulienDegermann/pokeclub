@@ -1,8 +1,6 @@
 # uploads
 /wp-content/uploads/*
 !/wp-content/uploads/.gitkeep
-/wp-content/themes/pokeclublorientais/assets/images/*
-!/wp-content/themes/pokeclublorientais/assets/images/.gitkeep
 
 # docker files
 docker-compose.override.yaml
