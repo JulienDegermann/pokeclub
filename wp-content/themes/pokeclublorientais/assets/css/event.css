@@ -1,0 +1,64 @@
+/* event details' page */
+#event {
+    img {
+        object-fit: cover;
+
+        @media screen and (min-width: 841px) {
+            width: 50%;
+            height: 300px;
+        }
+        @media screen and (max-width: 840px) {
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
+
+/* events' section with cards */
+:is(#events, #event) .article-card.event {
+    &::before {
+        content: "type of event here";
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(25%, 50%) rotate(45deg);
+        background: var(--CTA);
+        color: var(--LIGHT);
+        padding: 0.25rem 0.5rem;
+        font-size: 1em;
+        border-bottom-right-radius: 8px;
+        display: block;
+        width: 100px;
+        height: 20px;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .date {
+        font-size: 0.8em;
+        display: inline-block;
+        font-weight: normal;
+        margin-bottom: 0.5em;
+    }
+    &.tournament::before {
+        content: "tournoi";
+        background: yellow;
+        color: var(--DARK);
+    }
+    &.cup::before {
+        content: "cup";
+        background: red;
+    }
+    &.league::before {
+        content: "défi";
+        background: orange;
+    }
+    &.trade::before {
+        content: "échange";
+        background: blue;
+    }
+    &.init::before {
+        content: "initiation";
+        background: green;
+    }
+}

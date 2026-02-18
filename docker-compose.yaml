@@ -1,0 +1,31 @@
+services:
+    wordpress:
+        image: wordpress:latest
+        ports:
+            - "80:80"
+        networks:
+            - wpnet
+            - webgateway
+
+    db:
+        image: mysql:latest
+        ports:
+            - "3306"
+        environment:
+            MYSQL_DATABASE: wordpress
+            MYSQL_USER: wordpress
+            MYSQL_PASSWORD: wordpress
+            MYSQL_ROOT_PASSWORD: root
+        volumes:
+            - db_data:/var/lib/mysql
+        networks:
+            - wpnet
+
+
+volumes:
+    db_data:
+
+networks:
+    wpnet:
+    webgateway:
+        external: true

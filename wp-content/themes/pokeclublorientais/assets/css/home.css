@@ -1,0 +1,43 @@
+#hero_section {
+    position: relative;
+    @media screen and (max-width: 820px) {
+        padding-top: 1em;
+    }
+
+    .flex {
+        @media screen and (max-width: 820px) {
+            display: block;
+        }
+    }
+}
+
+#hero_image {
+    width: 50%;
+    img {
+        width: 100%;
+        margin-bottom: 2em;
+        height: 100px;
+        display: block;
+        object-fit: cover;
+        width: 100%;
+
+        @media screen and (min-width: 541px) and (max-width: 820px) {
+            height: 200px;
+        }
+        
+        @media screen and (min-width: 821px) and (max-width: 999px) {
+            margin-bottom: 1em;
+            height: 300px;
+        }
+        @media screen and (min-width: 1000px) {
+            margin-bottom: 1em;
+            height: 300px;
+        }
+    }
+}
+
+#partners {
+    .flex {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,63 @@
+/* partner details' page */
+#partner {
+    @media screen and (min-width: 541px) {
+        .flex > * {
+            width: 50%;
+        }
+    }
+    img {
+        height: auto;
+        object-fit: contain;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 1em;
+
+        @media screen and (min-width: 541px) {
+            margin-bottom: 0;
+            max-width: 300px;
+        }
+    }
+}
+
+/* partners section with cards */
+#partners {
+    .flex {
+        flex-wrap: wrap;
+
+        .article-card.partner {
+            border: none;
+            box-shadow: none;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            min-width: 200px;
+            height: 100%;
+            min-height: 200px;
+            max-height: 300px;
+            aspect-ratio: 1;
+
+            .article-card-title {
+                background: none;
+                color: var(--DARK);
+                font-size: 1.2em;
+                font-weight: bold;
+                text-align: center;
+                position: relative;
+            }
+
+            img {
+                position: relative;
+                object-fit: cover;
+                height: 80%;
+                width: 80%;
+                transform: scale(0.9);
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

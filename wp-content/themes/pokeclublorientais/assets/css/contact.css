@@ -1,0 +1,30 @@
+form#acf-form {
+    /* .form-item, */
+    .acf-field {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1em;
+
+        & :not(textarea) {
+            resize: none;
+        }
+
+        .acf-label {
+            margin-top: 1em;
+        }
+        acf-input {
+            padding: 1em;
+            border: none;
+            box-shadow: 0 0 4px 0 var(--DARK);
+            border-radius: 4px;
+            margin-top: 0.4em;
+            margin-bottom: 0.8em;
+            font-style: italic;
+            width: 100%;
+        }
+    }
+}

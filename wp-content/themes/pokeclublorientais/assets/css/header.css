@@ -1,0 +1,26 @@
+header {
+    padding: 1em;
+    width: 100%;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .container {
+        align-items: center;
+    }
+}
+
+a.logo {
+    display: inline-block;
+    width: max-content;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    img {
+        max-width: 50px;
+    }
+}

@@ -1,0 +1,40 @@
+footer {
+    background: var(--DARK);
+    color: var(--LIGHT);
+    width: 100%;
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    .navigation .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-sublist {
+        display: none;
+    }
+
+    .footer-subsection {
+        width: 100%;
+
+        .section-title {
+            color: var(--LIGHT);
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 840px) {
+                margin-top: 2em;
+            }
+        }
+        a {
+            display: block;
+            line-height: 2;
+            display: inline-block;
+            width: max-content;
+        }
+    }
+
+    .link::before {
+        display: none;
+    }
+}

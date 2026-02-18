@@ -1,0 +1,27 @@
+:is(#rules, #play) .flex {
+    align-items: stretch;
+
+
+    img {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+        margin-bottom: 1em;
+
+        @media screen and (min-width: 841px) {
+            margin-bottom: 0;
+            height: auto;
+            max-width: 40%;
+        }
+    }
+
+    .link::before {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 841px) {
+    #play .flex {
+        flex-direction: row-reverse;
+    }
+}

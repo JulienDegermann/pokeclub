@@ -1,0 +1,18 @@
+.button {
+    padding: 0.5em 1em;
+    margin: 1em auto;
+    cursor: pointer;
+    color: var(--DARK);
+    background: var(--LIGHT);
+    font-family: inherit;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px var(--DARK);
+    border: none;
+
+    &:hover {
+        box-shadow: 0 0 5px 4px var(--DARK);
+    }
+}

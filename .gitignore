@@ -1,0 +1,28 @@
+# uploads
+/wp-content/uploads/*
+!/wp-content/uploads/.gitkeep
+/wp-content/themes/pokeclublorientais/assets/images/*
+!/wp-content/themes/pokeclublorientais/assets/images/.gitkeep
+
+# docker files
+docker-compose.override.yaml
+
+# config files
+wp-config.php
+/.htaccess
+wp-content/upgrade/*
+!wp-content/upgrade/.gitkeep
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+sftp-config.json
