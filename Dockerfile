@@ -1,5 +1,5 @@
 FROM wordpress:latest
 
-COPY wp-content/themes/mon-theme /var/www/html/wp-content/themes/mon-theme
+COPY . /var/www/html/
 
 EXPOSE 80
