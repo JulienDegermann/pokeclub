@@ -3,6 +3,11 @@ services:
         image: wordpress:latest
         ports:
             - "80:80"
+        labels:
+            - traefik.enable=true
+            - traefik.http.routers.webpconverter.rule=Host(`pokeclub.ju2breizh.fr`)
+        build:
+            context: .
         networks:
             - wpnet
             - webgateway
@@ -20,7 +25,6 @@ services:
             - db_data:/var/lib/mysql
         networks:
             - wpnet
-
 
 volumes:
     db_data:
