@@ -16,15 +16,25 @@ footer {
     }
 
     .footer-subsection {
-        width: max-content;
+        width: 100%;
 
         .section-title {
             color: var(--LIGHT);
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 840px) {
+                margin-top: 2em;
+            }
         }
         a {
             display: block;
-            width: 100%;
             line-height: 2;
+            display: inline-block;
+            width: max-content;
         }
+    }
+
+    .link::before {
+        display: none;
     }
 }

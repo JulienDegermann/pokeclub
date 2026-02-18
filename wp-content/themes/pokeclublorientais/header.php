@@ -57,6 +57,13 @@
                         title="Retour vers l'accueil">
                 </picture>
             </a>
+            <button
+                id="menu-toggler"
+                arial-label="menu de navigation"
+                role="navigation toggler">
+
+                <?php include_once __DIR__ . "/_partials/_menu_toggler.php"; ?>
+            </button>
             <?php include "./wp-content/themes/pokeclublorientais/_partials/_navigation.php"; ?>
 
         </div>

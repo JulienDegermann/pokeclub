@@ -1,56 +1,69 @@
 <?php
 get_header();
 $google_link = get_google_maps_link(get_field('address'), get_field('city'));
-$other_partners = get_other_partners();
+$partners = get_other_partners();
+$events = get_next_events(3);
 ?>
-  <section id="partner">
-    <div class="container">
-      <h2 class="section-title"><?= the_field('name'); ?></h2>
+<section id="partner">
+  <div class="container">
+    <h2 class="section-title"><?= the_field('name'); ?></h2>
 
-      <div class="flex">
+    <div class="flex">
+      <?php if (get_field('logo')) { ?>
+        <img
+          src="<?= esc_url(get_field('logo')['url']) ?>"
+          alt="<?= esc_html(get_field('logo')['alt']) ?>"
+          title="<?= esc_html(get_field('logo')['caption']) ?>">
+      <?php } ?>
+      <div>
+        <h3 class="article-title">Informations utiles</h3>
+        <? if (get_field('email') !== "") { ?>
+          <p>
 
-        <div>
-          <h3 class="article-title">Informations utiles</h3>
-
-          <p><?= get_field('address') && get_field('address') !== "" ? "Adresse : " .  esc_html(get_field('address')) : 'address'; ?></p>
-
-          <p><?= get_field('city') && get_field('city') !== "" ? "Ville : " . esc_html(get_field('city')) : 'city'; ?></p>
-
-          <? if (get_field('email') !== "") { ?>
             ✉️ : <a href="mailto:<?= get_field('email') ?>"><?= get_field('email') ?></a> <br>
-          <?php } ?>
-
-          <? if (get_field('phone') !== "") { ?>
-            📞 : <a href="tel:<?= get_field('phone') ?>"><?= get_field('phone') ?></a> <br>
-          <?php } ?>
-
-          <a
-            target="_blank"
-            class="link"
-            href="<?= $google_link ?>">Obtenir l'itinéraire</a>
-        </div>
-
-
-        <?php if (get_field('logo')) { ?>
-          <img
-            src="<?= esc_url(get_field('logo')['url']) ?>"
-            alt="<?= esc_html(get_field('logo')['alt']) ?>"
-            title="<?= esc_html(get_field('logo')['caption']) ?>">
+          </p>
         <?php } ?>
-      </div>
-    </div>
-  </section>
-  <section class="more-datas">
-    <div class="container">
-      <h3 class="article-title">Nos autres partenaires</h3>
-      <div class="cards-wrapper">
+        <? if (get_field('website') !== "") { ?>
+          <p>
+
+            🌐 : <a target="_blank" href="<?= get_field('website') ?>">Site web</a> <br>
+          </p>
+        <?php } ?>
+
+        <? if (get_field('phone') !== "") { ?>
+          <p>
+
+            📞 : <a href="tel:<?= get_field('phone') ?>"><?= get_field('phone') ?></a> <br>
+          </p>
+        <?php } ?>
+
         <?php
-        while ($other_partners->have_posts()): $other_partners->the_post();
-          include __DIR__ . '/_partials/_partner_card.php';
-        endwhile;
-        wp_reset_postdata();
-        ?>
+        if (get_field('address') && get_field('address') !== "") { ?>
+          <p>
+            <?= get_field('address') && get_field('address') !== "" ? "Adresse : " .  esc_html(get_field('address')) : ''; ?>
+            <br>
+            <a
+              target="_blank"
+              class="link"
+              href="<?= $google_link ?>">Obtenir l'itinéraire</a>
+          </p>
+        <?php  } ?>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <?php include_once __DIR__ . "/_partials/_more_partners.php"; ?>
+  </div>
+</section>
+
+<section class="more-datas">
+  <div class="container">
+
+    <?php include_once __DIR__ . "/_partials/_more_events.php"; ?>
+
+</section>
 <?php get_footer(); ?>

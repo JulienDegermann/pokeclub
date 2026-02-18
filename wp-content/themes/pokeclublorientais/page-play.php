@@ -29,6 +29,9 @@ get_header(); ?>
 <section id="play">
   <div class="container">
     <div class="flex">
+      <img
+        src="https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&q=80&w=800"
+        alt="Joueurs participant à un tournoi local">
       <div class="content">
         <h2 class="section-title">Où Jouer ?</h2>
         <ol>
@@ -54,20 +57,9 @@ get_header(); ?>
             </p>
           </li>
         </ol>
-
-        <div class="sub-section">
-
-        </div>
-
-        <!-- Sous-section 3 -->
-        <div class="sub-section">
-
-        </div>
       </div>
-      <img
-        src="https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&q=80&w=800"
-        alt="Joueurs participant à un tournoi local">
     </div>
+
   </div>
 </section>
 

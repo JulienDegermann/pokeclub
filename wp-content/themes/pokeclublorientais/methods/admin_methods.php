@@ -13,6 +13,11 @@ add_action('admin_init', function () {
   }
 }, 1);
 
+
+/**
+ * Method for adding title tag
+ *  @return void
+ */
 add_action('after_setup_theme', function () {
   add_theme_support('title-tag');
 }, 1);

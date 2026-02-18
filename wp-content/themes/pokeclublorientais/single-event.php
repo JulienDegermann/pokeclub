@@ -1,6 +1,6 @@
 <?php
 get_header();
-$other_events = get_other_events(4);
+$events = get_other_events(4);
 $google_link = get_google_maps_link(get_field('place'), get_field('city'));
 $img = get_event_picture(get_field('type'));
 $partners = get_partners();
@@ -39,33 +39,18 @@ $partners = get_partners();
   </div>
 </section>
 
-<section class="more-datas">
+<section>
   <div class="container">
-    <h3 class="article-title">Autres évènements</h3>
-    <div class="cards-wrapper">
-      <?php
-      while ($other_events->have_posts()): $other_events->the_post();
-        include __DIR__ . '/_partials/_event_card.php';
-      endwhile;
-      wp_reset_postdata();
-      ?>
-    </div>
+    <?php include_once __DIR__ . "/_partials/_more_events.php"; ?>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <?php include_once __DIR__ . "/_partials/_more_partners.php"; ?>
   </div>
 </section>
 
-<section class="more-datas">
-  <div class="container">
-    <h3 class="article-title">Nos partenaires</h3>
-    <div class="cards-wrapper">
-      <?php
-      while ($partners->have_posts()): $partners->the_post();
-        include __DIR__ . '/_partials/_partner_card.php';
-      endwhile;
-      wp_reset_postdata();
-      ?>
-    </div>
-  </div>
-</section>
+
 
 
 

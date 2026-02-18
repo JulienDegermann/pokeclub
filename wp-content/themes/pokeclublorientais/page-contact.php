@@ -3,8 +3,9 @@
 /**
  * Template Name: Contact
  */
+acf_form_head();
+get_header();
 ?>
-<?php get_header(); ?>
 <section id="contact">
     <div class="container">
         <h2 class="section-title">Nous contacter</h2>
@@ -29,7 +30,6 @@
             </div>
 
 
-            <?php include_once __DIR__ . '/_partials/_contact_form.php'; ?>
             <?php include_once __DIR__ . '/_partials/_acf_form.php'; ?>
         </div>
     </div>

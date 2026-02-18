@@ -12,8 +12,8 @@ add_action('init', function () {}, 1);
 
 
 add_action('wp_enqueue_scripts', function () {
-    wp_register_style('css', '/wp-content/themes/pokeclublorientais/assets/css/index.css');
-    wp_register_script('js', '/wp-content/themes/pokeclublorientais/assets/scripts/index.js');
+    wp_register_style('css', '/wp-content/themes/pokeclublorientais/assets/css/index.css'); // importé 
+    wp_register_script('js', '/wp-content/themes/pokeclublorientais/assets/scripts/index.js'); // non importé
     wp_enqueue_style('css');
     wp_enqueue_script('js');
 

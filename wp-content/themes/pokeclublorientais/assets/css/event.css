@@ -1,10 +1,16 @@
 /* event details' page */
-
 #event {
     img {
-        width: 50%;
-        height: 300px;
         object-fit: cover;
+
+        @media screen and (min-width: 841px) {
+            width: 50%;
+            height: 300px;
+        }
+        @media screen and (max-width: 840px) {
+            width: 100%;
+            height: 200px;
+        }
     }
 }
 

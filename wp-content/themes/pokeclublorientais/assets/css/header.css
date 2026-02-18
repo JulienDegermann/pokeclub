@@ -5,15 +5,17 @@ header {
     .container {
         display: flex;
         justify-content: space-between;
+        position: relative;
+    }
+    .container {
+        align-items: center;
     }
 }
 
 a.logo {
     display: inline-block;
     width: max-content;
-    margin: 0 1rem;
     text-decoration: none;
-    padding: 1rem;
     letter-spacing: 0.1em;
     font-weight: bold;
     text-transform: uppercase;

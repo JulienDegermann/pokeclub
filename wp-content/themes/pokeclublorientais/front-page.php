@@ -8,8 +8,9 @@ get_header();
     <div class="container">
         <div class="flex">
             <picture id="hero_image">
-                <source srcset="/wp-content/themes/pokeclublorientais/assets/images/home.jpeg" media="(min-width: 1200px)">
-                <img src="/wp-content/themes/pokeclublorientais/assets/images/home.jpeg" alt="image JCC Pokémon">
+                <source srcset="/wp-content/themes/pokeclublorientais/assets/images/home.jpeg" media="(min-width: 720px)">
+                <source srcset="/wp-content/themes/pokeclublorientais/assets/images/home_medium.jpeg" media="(min-width: 520px)">
+                <img src="/wp-content/themes/pokeclublorientais/assets/images/home_small.jpeg" alt="image JCC Pokémon">
             </picture>
             <div id="presents">
                 <h2 class="section-title">Le PokéClub, c'est quoi ?</h2>

@@ -1,15 +1,21 @@
 /* partner details' page */
 #partner {
-    .flex {
-        flex-direction: row-reverse;
-    }
-    & > * {
-        width: 50%;
+    @media screen and (min-width: 541px) {
+        .flex > * {
+            width: 50%;
+        }
     }
     img {
-        max-width: 300px;
         height: auto;
         object-fit: contain;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 1em;
+
+        @media screen and (min-width: 541px) {
+            margin-bottom: 0;
+            max-width: 300px;
+        }
     }
 }
 

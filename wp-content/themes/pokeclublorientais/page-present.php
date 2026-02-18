@@ -1,9 +1,12 @@
 <?php
+$events = get_next_events(3);
+$partners = get_partners();
 
 /**
  * Template Name: Présentation
  */
 get_header(); ?>
+
 <section id="partners">
   <div class="container">
     <h2 class="section-title">Qui sommes-nous ?</h2>
@@ -42,6 +45,11 @@ get_header(); ?>
       de participer à des compétitions de plus grande envergure, d'organiser un grand "Poké-Événement"
       annuel en Bretagne Sud et de développer des partenariats caritatifs pour
       mettre notre passion au service de causes solidaires.</p>
+
+
+    <?php include_once __DIR__ . "/_partials/_more_events.php"; ?>
+    <?php include_once __DIR__ . "/_partials/_more_partners.php"; ?>
+
   </div>
 </section>
 <section>
@@ -61,4 +69,5 @@ get_header(); ?>
   </div>
 
 </section>
+
 <?php get_footer(); ?>
