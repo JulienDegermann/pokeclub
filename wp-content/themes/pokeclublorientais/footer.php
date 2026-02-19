@@ -1,5 +1,9 @@
 </main>
-<?php wp_footer(); ?>
+
+<?php
+wp_footer();
+$company = get_company_datas();
+?>
 <footer>
   <div class="container">
     <div class="flex">
@@ -8,14 +12,14 @@
           Nous contacter
         </h4>
         <ul>
-          <?php if (get_field('company_email', 112) !== "") { ?>
+          <?php if ($company["email"] !== "") { ?>
             <li>
-              📧 : <a class="link" href="mailto:<?= esc_html(get_field('company_email', 112)); ?>"><?= esc_html(get_field('company_email', 112)); ?></a>
+              📧 : <a class="link" href="mailto:<?= esc_html($company["email"]); ?>"><?= esc_html($company["email"]); ?></a>
             </li>
           <?php } ?>
-          <?php if (get_field('company_phone', 112) !== "") { ?>
+          <?php if ($company["phone"] !== "") { ?>
             <li>
-              📞 : <a class="link" href="tel:<?= esc_html(get_field('company_phone'), 112); ?>"><?= esc_html(get_field('company_phone', 112)); ?></a>
+              📞 : <a class="link" href="tel:<?= esc_html($company["phone"]); ?>"><?= esc_html($company["phone"]); ?></a>
             </li>
           <?php } ?>
           <li>
@@ -25,7 +29,7 @@
       </div>
 
     </div>
-  </divƒ>
+    </divƒ>
 
 </footer>
 </body>

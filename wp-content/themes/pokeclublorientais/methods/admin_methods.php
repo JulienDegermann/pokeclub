@@ -24,3 +24,22 @@ add_action('after_setup_theme', function () {
 
 
 add_filter('use_block_editor_for_post_type', '__return_false', 10);
+
+
+
+/**
+ * Method for getting company's datas
+ * @return array
+ */
+function get_company_datas()
+{
+  $page = get_page_by_path('presentation');
+
+  $company = [
+    'name' => get_field('company_name', $page->ID),
+    'email' => get_field('company_email', $page->ID),
+    'phone' => get_field('company_phone', $page->ID),
+  ];
+
+  return $company;
+}
