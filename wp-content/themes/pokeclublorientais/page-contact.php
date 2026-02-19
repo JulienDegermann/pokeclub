@@ -8,12 +8,9 @@ get_header();
 ?>
 <section id="contact">
     <div class="container">
-        <h2 class="section-title">Nous contacter</h2>
-
         <div class="flex">
-            <div class="">
-
-                <h3 class="section-title">Où nous trouver ?</h3>
+            <div>
+                <h2 class="section-title">Où nous trouver ?</h2>
                 <p>L'association est basée à Lorient (Morbihan, 56). <br>
                     Les memnbres s'éparpillent sur tout le département : Lorient, Vannes, Pontivy, …). <br>
                     Ils se retrouvent régulièrement aux tournois et autres rencontres, principalement à Lorient et Vannes</p>
