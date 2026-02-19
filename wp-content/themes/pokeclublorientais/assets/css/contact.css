@@ -1,3 +1,17 @@
+@media screen and (max-width: 840px) {
+    #contact .flex > div:nth-child(2) {
+        margin-top: 3em;
+    }
+}
+
+iframe {
+    width: 100%;
+
+    @media screen and (max-width: 840px) {
+        max-height: 300px;
+    }
+}
+
 form#acf-form {
     /* .form-item, */
     .acf-field {
