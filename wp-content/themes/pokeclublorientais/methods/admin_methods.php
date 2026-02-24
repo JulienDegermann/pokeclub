@@ -43,3 +43,22 @@ function get_company_datas()
 
   return $company;
 }
+
+
+/**
+ * Method returning metadatas 
+ */
+function get_metadatas()
+{
+  $metadatas = [
+    "description" => "Envie de jouer aux cartes Pokémon ? 
+    Le Poké Club rassemble les joueurs et collectionneurs de Bretagne Sud. 
+    Échanges, tournois, initiations et autres événements sont organisés et partagés régulièrement. 
+    Rejoignez-nous pour des tournois, échanges et événements.",
+    "keywords" => "Pokémon, Lorient, Vannes, tournoi, cartes, communauté, jouer, échanger, événements, échanges, initiation, TCG, JCC, collection",
+    "author" => "Poké Club Bretagne Sud",
+    "url" => "http://pokeclub.ju2breizh.fr/",
+    "title" => "Poké Club Bretagne Sud",
+    "card_image" => __DIR__ . '/../assets/images/og-image.webp' ,
+  ];
+}

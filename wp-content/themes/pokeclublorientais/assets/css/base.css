@@ -6,7 +6,10 @@
     --LIGHT-50: rgba(255, 255, 255, 0.5);
     --LIGHT-75: rgba(255, 255, 255, 0.75);
 }
-
+h1.section-title {
+    font-size: .7rem;
+    position: absolute;
+}
 * {
     transition: all 0.3s;
     box-sizing: border-box;
