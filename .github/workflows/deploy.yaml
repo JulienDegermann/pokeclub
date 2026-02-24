@@ -13,16 +13,16 @@ jobs:
         runs-on: ubuntu-latest
         environment: production
         if: ${{ github.event.pull_request.merged }}
-        command_timeout: 60m
         steps:
             - name: Connect SSH and rebuild
               uses: appleboy/ssh-action@v1.2.0
               with:
-                  host: ${{ secrets.SERVER_IP }}
-                  username: ${{ secrets.SERVER_USER }}
-                  key: ${{ secrets.SSH_KEY }}
-                  script: |
-                      cd pokeclub
-                      git pull origin main
-                      docker-compose up wordpress -d --build
-                      docker builder prune -f
+                command_timeout: 60m
+                host: ${{ secrets.SERVER_IP }}
+                username: ${{ secrets.SERVER_USER }}
+                key: ${{ secrets.SSH_KEY }}
+                script: |
+                    cd pokeclub
+                    git pull origin main
+                    docker-compose up wordpress -d --build
+                    docker builder prune -f
