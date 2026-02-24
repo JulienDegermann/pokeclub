@@ -48,7 +48,7 @@ function get_company_datas()
 /**
  * Method returning metadatas 
  */
-function get_metadatas()
+function get_metadatas(): array 
 {
   $metadatas = [
     "description" => "Envie de jouer aux cartes Pokémon ? 
@@ -59,6 +59,7 @@ function get_metadatas()
     "author" => "Poké Club Bretagne Sud",
     "url" => "http://pokeclub.ju2breizh.fr/",
     "title" => "Poké Club Bretagne Sud",
-    "card_image" => __DIR__ . '/../assets/images/og-image.webp' ,
+    "card_image" => __DIR__ . '/../assets/images/og-image.webp',
   ];
+  return $metadatas;
 }
