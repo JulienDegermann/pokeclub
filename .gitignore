@@ -1,6 +1,5 @@
 # uploads
-/wp-content/uploads/*
-!/wp-content/uploads/.gitkeep
+/wp-content/uploads
 
 # docker files
 docker-compose.override.yaml
