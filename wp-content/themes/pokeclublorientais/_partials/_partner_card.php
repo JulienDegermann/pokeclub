@@ -1,9 +1,7 @@
 <?php
 $image_id = get_field('logo')['ID'];
-var_dump(wp_get_attachment_image($image_id, "small"));
-var_dump(wp_get_attachment_image($image_id, "medium"));
-var_dump(wp_get_attachment_image($image_id, "large"));
-var_dump(wp_get_attachment_image($image_id, "thumbnail")); ?>
+// use wp_get_attachment_image($image_id, "small")) in srcset for better performance;
+?>
 
 <a class="article-card partner"
   href="<?= esc_url(get_permalink()) ?>">
