@@ -1,8 +1,5 @@
 #hero_section {
     position: relative;
-    @media screen and (max-width: 820px) {
-        padding-top: 1em;
-    }
 
     .flex {
         @media screen and (max-width: 820px) {
@@ -13,6 +10,7 @@
 
 #hero_image {
     width: 50%;
+
     img {
         width: 100%;
         margin-bottom: 2em;

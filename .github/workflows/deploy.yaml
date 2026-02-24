@@ -23,6 +23,5 @@ jobs:
                   script: |
                       cd pokeclub
                       git pull origin main
-                      docker-compose build --no-cache php
-                      docker-compose down && docker-compose up php -d --no-deps --force-recreate 
+                      docker-compose up wordpress -d --build
                       docker builder prune -f
