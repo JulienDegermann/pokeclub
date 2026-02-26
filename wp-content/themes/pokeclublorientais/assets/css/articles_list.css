@@ -23,7 +23,7 @@ section.dark {
 .article-card {
     display: block;
     position: relative;
-    aspect-ratio: 1;
+    aspect-ratio: 4/3;
     border: 2px solid transparent;
     border-radius: 8px;
     overflow: hidden;
@@ -59,6 +59,7 @@ section.dark {
         margin: 0;
         width: 100%;
         backdrop-filter: blur(15px);
+        line-height: 1;
     }
 }
 
