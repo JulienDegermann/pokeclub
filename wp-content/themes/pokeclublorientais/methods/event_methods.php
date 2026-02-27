@@ -69,15 +69,15 @@ function get_event_picture(string $eventType)
 {
   switch ($eventType) {
     case 'tournament':
-      return '/wp-content/themes/pokeclublorientais/assets/images/trade.jpg';
+      return '/wp-content/themes/pokeclublorientais/assets/images/freeplay.webp';
     case 'init':
-      return 'https://gamewave.fr/static/images/medias/upload/Vanden/Pok%C3%A9mon/Acad%C3%A9mie%20de%20combat/DSC02540.webp';
-    case 'trade':
-      return 'https://pokuniverse.com/wp-content/uploads/2021/05/Pokemon-Trading-Cards-Guide.png';
+      return '/wp-content/themes/pokeclublorientais/assets/images/initiation.webp';
+      case 'trade':
+        return '/wp-content/themes/pokeclublorientais/assets/images/trade.webp';
     case 'league':
-      return 'https://www.chez-donovan.com/web/image/10038-665cf2bc/chez-donovan-pokemon-ligue-de-cocagne-tarn-lavaur-defi-de-ligue-league-challenge.jpg';
+      return '/wp-content/themes/pokeclublorientais/assets/images/challenge.webp';
     case 'cup':
-      return 'https://events.goodgames.com.au/wp-content/uploads/2023/09/Corporate-Site-Event-Banner-Pokemon-League-Cup.jpg';
+      return '/wp-content/themes/pokeclublorientais/assets/images/cup.webp';
     default:
       return 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/150.png';
   }

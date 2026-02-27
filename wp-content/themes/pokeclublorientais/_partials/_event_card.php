@@ -11,6 +11,5 @@ $picture = get_event_picture(get_field('type'));
   <h3 class="article-card-title">
     <span class="date">📆 <?= date_i18n('d F Y, H:i', strtotime(get_field('datetime')));  ?></span> <br>
     <?= esc_html(the_title()); ?> <br>
-
   </h3>
 </a>

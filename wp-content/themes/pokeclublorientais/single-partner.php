@@ -3,18 +3,14 @@ get_header();
 $google_link = get_google_maps_link(get_field('address'), get_field('city'));
 $partners = get_other_partners();
 $events = get_next_events(3);
+$image_id = get_field('logo')['ID'];
 ?>
 <section id="partner">
   <div class="container">
     <h2 class="section-title"><?= the_field('name'); ?></h2>
 
     <div class="flex">
-      <?php if (get_field('logo')) { ?>
-        <img
-          src="<?= esc_url(get_field('logo')['url']) ?>"
-          alt="<?= esc_html(get_field('logo')['alt']) ?>"
-          title="<?= esc_html(get_field('logo')['caption']) ?>">
-      <?php } ?>
+      <?= wp_get_attachment_image($image_id); ?>
       <div>
         <h3 class="article-title">Informations utiles</h3>
         <? if (get_field('email') !== "") { ?>
