@@ -16,7 +16,7 @@
 
 /* events' section with cards */
 :is(#events, #event) .article-card.event {
-    &::before {
+    /* &::before {
         content: "type of event here";
         position: absolute;
         top: 0;
@@ -32,7 +32,7 @@
         height: 20px;
         z-index: 10;
         text-align: center;
-    }
+    } */
 
     .date {
         font-size: 0.8em;
@@ -40,7 +40,7 @@
         font-weight: normal;
         margin-bottom: 0.5em;
     }
-    &.tournament::before {
+    /* &.tournament::before {
         content: "tournoi";
         background: yellow;
         color: var(--DARK);
@@ -60,5 +60,5 @@
     &.init::before {
         content: "initiation";
         background: green;
-    }
+    } */
 }

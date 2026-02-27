@@ -46,9 +46,14 @@ get_header(); ?>
       annuel en Bretagne Sud et de développer des partenariats caritatifs pour
       mettre notre passion au service de causes solidaires.</p>
 
+    <div id="events">
 
-    <?php include_once __DIR__ . "/_partials/_more_events.php"; ?>
-    <?php include_once __DIR__ . "/_partials/_more_partners.php"; ?>
+      <?php include_once __DIR__ . "/_partials/_more_events.php"; ?>
+    </div>
+    <div id="partners">
+
+      <?php include_once __DIR__ . "/_partials/_more_partners.php"; ?>
+    </div>
 
   </div>
 </section>

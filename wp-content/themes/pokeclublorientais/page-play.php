@@ -9,8 +9,13 @@ get_header(); ?>
   <div class="container">
     <div class="flex">
       <img
-        src="https://images.unsplash.com/photo-1613771404721-1f92d799e49f?auto=format&fit=crop&q=80&w=800"
-        alt="Cartes Pokémon sur une table de jeu">
+        src="/wp-content/themes/pokeclublorientais/assets/images/rules_large.webp"
+        srcset="/wp-content/themes/pokeclublorientais/assets/images/rules_small.webp 320w,
+        
+        /wp-content/themes/pokeclublorientais/assets/images/rules_medium.webp 640w,
+        /wp-content/themes/pokeclublorientais/assets/images/rules_large.webp 800w"
+        sizes="(max-width: 340px) 100vw, (max-width: 640px) 100vw, 50vw"
+        alt="cartes Pokémon">
       <div class="content">
         <h2 class="section-title">Comment jouer ?</h2>
         <p>
@@ -30,8 +35,13 @@ get_header(); ?>
   <div class="container">
     <div class="flex">
       <img
-        src="https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&q=80&w=800"
-        alt="Joueurs participant à un tournoi local">
+        src="/wp-content/themes/pokeclublorientais/assets/images/where_large.webp"
+        srcset="/wp-content/themes/pokeclublorientais/assets/images/where_small.webp 320w,
+        
+        /wp-content/themes/pokeclublorientais/assets/images/where_medium.webp 640w,
+        /wp-content/themes/pokeclublorientais/assets/images/where_large.webp 1280w"
+        sizes="(max-width: 340px) 100vw, (max-width: 640px) 100vw, 50vw"
+        alt="carte du Morbihan">
       <div class="content">
         <h2 class="section-title">Où Jouer ?</h2>
         <ol>

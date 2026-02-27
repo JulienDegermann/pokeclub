@@ -69,9 +69,9 @@ function get_event_picture(string $eventType)
 {
   switch ($eventType) {
     case 'tournament':
-      return '/wp-content/themes/pokeclublorientais/assets/images/training.webp';
+      return '/wp-content/themes/pokeclublorientais/assets/images/freeplay.webp';
     case 'init':
-      return '/wp-content/themes/pokeclublorientais/assets/images/init.webp';
+      return '/wp-content/themes/pokeclublorientais/assets/images/initiation.webp';
       case 'trade':
         return '/wp-content/themes/pokeclublorientais/assets/images/trade.webp';
     case 'league':
