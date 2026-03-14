@@ -16,11 +16,11 @@ services:
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         ports:
-            - "1234:80"
+            - "1810:80"
         environment:
-            PMA_HOST: db
-            PMA_USER: wordpress
-            PMA_PASSWORD: wordpress
+            PMA_HOST: ${DB_HOST}
+            PMA_USER: ${DB_USER}
+            PMA_PASSWORD: ${DB_PASSWORD}
         networks:
             - wpnet
 
@@ -29,9 +29,9 @@ services:
         ports:
             - "3306"
         environment:
-            MYSQL_DATABASE: wordpress
-            MYSQL_USER: wordpress
-            MYSQL_PASSWORD: wordpress
+            MYSQL_DATABASE: ${DB_HOST}
+            MYSQL_USER: ${DB_USER}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
             MYSQL_ROOT_PASSWORD: root
         volumes:
             - db_data:/var/lib/mysql
