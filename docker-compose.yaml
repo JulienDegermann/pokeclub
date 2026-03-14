@@ -8,9 +8,21 @@ services:
             - traefik.http.routers.pokeclub.rule=Host(`pokeclub.ju2breizh.fr`)
         build:
             context: .
+        volumes:
+            - ./wp-content/uploads:/var/www/html/wp-content/uploads
         networks:
             - wpnet
             - webgateway
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - "1234:80"
+        environment:
+            PMA_HOST: db
+            PMA_USER: wordpress
+            PMA_PASSWORD: wordpress
+        networks:
+            - wpnet
 
     db:
         image: mysql:latest

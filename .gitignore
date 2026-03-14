@@ -15,6 +15,7 @@ wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
+.env
 
 # OS & IDE files
 .DS_Store
